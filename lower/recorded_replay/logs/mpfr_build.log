@@ -1,0 +1,17 @@
+Compiling flint.pyx because it changed.
+[1/1] Cythonizing flint.pyx
+running build_ext
+building 'flint' extension
+creating build/temp.linux-x86_64-cpython-313
+x86_64-linux-gnu-g++ -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O2 -Wall -fPIC -I/opt/pyvenv/include -I/usr/include/python3.13 -c flint.cpp -o build/temp.linux-x86_64-cpython-313/flint.o -O3 -std=c++17
+In file included from flint.cpp:1165:
+balls.hpp: In member function ‘verified::Ball verified::Ball::operator*(const verified::Ball&) const’:
+balls.hpp:44:3: warning: this ‘for’ clause does not guard... [-Wmisleading-indentation]
+   44 |   for(int i=0;i<2;i++)for(int j=0;j<2;j++){mpfr_mul(t.lo,av[i],bv[j],MPFR_RNDD);mpfr_mul(t.hi,av[i],bv[j],MPFR_RNDU);if(mpfr_cmp(t.lo,c.lo)<0)mpfr_set(c.lo,t.lo,MPFR_RNDD);if(mpfr_cmp(t.hi,c.hi)>0)mpfr_set(c.hi,t.hi,MPFR_RNDU);}return c;
+      |   ^~~
+balls.hpp:44:229: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+   44 |   for(int i=0;i<2;i++)for(int j=0;j<2;j++){mpfr_mul(t.lo,av[i],bv[j],MPFR_RNDD);mpfr_mul(t.hi,av[i],bv[j],MPFR_RNDU);if(mpfr_cmp(t.lo,c.lo)<0)mpfr_set(c.lo,t.lo,MPFR_RNDD);if(mpfr_cmp(t.hi,c.hi)>0)mpfr_set(c.hi,t.hi,MPFR_RNDU);}return c;
+      |                                                                                                                                                                                                                                     ^~~~~~
+creating build/lib.linux-x86_64-cpython-313
+x86_64-linux-gnu-g++ -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O2 -Wall -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fwrapv -O2 build/temp.linux-x86_64-cpython-313/flint.o -L/usr/lib/x86_64-linux-gnu -o build/lib.linux-x86_64-cpython-313/flint.cpython-313-x86_64-linux-gnu.so -l:libmpfr.so.6 -lgmpxx -lgmp
+copying build/lib.linux-x86_64-cpython-313/flint.cpython-313-x86_64-linux-gnu.so -> 

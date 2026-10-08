@@ -1,0 +1,9 @@
+{
+  "status": "REQUESTED_NUMERICAL_CERTIFICATES_ACCEPTED",
+  "certificates_replayed": [
+    "lower"
+  ],
+  "lower_bound": "1773000000000/999999998227",
+  "strict_upper_bound": null,
+  "both_certificates_and_endpoint_checks_passed": false
+}

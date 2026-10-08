@@ -1,0 +1,30 @@
+{
+  "status": "UNIVERSAL_FIBRE_REPLAY_PASSED",
+  "row": 24,
+  "method": "boxes",
+  "source_sha256": "dda3aede80ada5ada961fe88b2d2d897b6764b59923e14d8c0c7117ebff3daab",
+  "input_sha256": "68624a00e3e16a3a58d8378de71d53cb1da92f43f5c886a7a575d4eb950badbe",
+  "certificate_sha256": "c0e21ba4048746ee2dd478a25a288803390360fb0e6afb4c4d45d2c39c8adf00",
+  "analytic_regenerated": true,
+  "precision_bits": 384,
+  "grid_nodes_per_channel": 757,
+  "interpolation_and_tail_error": "8408645185511792503211/1237940039285380274899124224",
+  "fixed_point_input_error": "3469034275507101/1208925819614629174706176",
+  "graph_quantization_error": "10760262267996648303544266045/664613997892457936451903530140172288",
+  "total_error": "4527024393459658650991375183165/664613997892457936451903530140172288",
+  "finite_upper_integer": 17611714116679,
+  "finite_scale": 17592186044416,
+  "certified_fibre_upper": "665356274628290176777292342037867837/664613997892457936451903530140172288",
+  "allowed": "157308487317901127/157132125000000000",
+  "strict_slack": "1127625661064552221675671536934325163807283923/203969159753100462944926878878763319296000000000000",
+  "statistics": {
+    "rectangles": 35,
+    "empty_rectangles": 0,
+    "flow_rectangles": 16,
+    "branch_rectangles": 2,
+    "integer_flows": 44,
+    "binary_nodes": 28,
+    "binary_leaves": 15
+  },
+  "seconds": 40.808146476745605
+}

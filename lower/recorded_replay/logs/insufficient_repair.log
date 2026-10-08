@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/mnt/data/KG_1773_certificate/verification_run/arithmetic_workspace/certify_above_1773/arithmetic/certify_arithmetic.py", line 121, in <module>
+    row_pivots.append(prove_pd(S,f'row{idx} M{k} transverse{r}'))
+                      ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/KG_1773_certificate/verification_run/arithmetic_workspace/certify_above_1773/arithmetic/certify_arithmetic.py", line 74, in prove_pd
+    if not d>0:raise ArithmeticError(f'PD check failed: {label}, pivot {j}: {d}')
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ArithmeticError: PD check failed: row0 M2 transverse3, pivot 10: [-5.7819999218616984e-05,-5.7819999218616977e-05]

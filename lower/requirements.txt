@@ -1,0 +1,4 @@
+# Versions used in the recorded Python 3.13.5 replay.
+numpy==2.3.5
+Cython==3.2.4
+setuptools==82.0.1

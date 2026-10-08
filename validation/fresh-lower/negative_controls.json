@@ -1,0 +1,166 @@
+{
+  "status": "ALL_NEGATIVE_CONTROLS_REJECTED",
+  "rejected_count": 32,
+  "tests": [
+    {
+      "test": "unfinished_status",
+      "rejected": true,
+      "reason": "Incomplete rectangle proof"
+    },
+    {
+      "test": "nonempty_pending_set",
+      "rejected": true,
+      "reason": "Pending rectangles remain"
+    },
+    {
+      "test": "changed_integer_target",
+      "rejected": true,
+      "reason": "Rectangle target mismatch"
+    },
+    {
+      "test": "unjustified_symmetry_prefix",
+      "rejected": true,
+      "reason": "Invalid external reflection prefix"
+    },
+    {
+      "test": "changed_coordinate_entry",
+      "rejected": true,
+      "reason": "Coordinate vectors changed"
+    },
+    {
+      "test": "changed_coordinate_normalizer",
+      "rejected": true,
+      "reason": "Coordinate normalizers changed"
+    },
+    {
+      "test": "duplicate_root_node",
+      "rejected": true,
+      "reason": "Duplicate or negative node id"
+    },
+    {
+      "test": "missing_proof_node",
+      "rejected": true,
+      "reason": "Missing/repeated rectangle node"
+    },
+    {
+      "test": "rectangle_root_endpoint_gap",
+      "rejected": true,
+      "reason": "Rectangle gap or endpoint mismatch"
+    },
+    {
+      "test": "duplicate_rectangle_children",
+      "rejected": true,
+      "reason": "Invalid rectangle children"
+    },
+    {
+      "test": "closed_child_coverage_gap",
+      "rejected": true,
+      "reason": "Rectangle gap or endpoint mismatch"
+    },
+    {
+      "test": "negative_cap_price",
+      "rejected": true,
+      "reason": "Invalid/nonpositive cap price"
+    },
+    {
+      "test": "understated_flow_bound",
+      "rejected": true,
+      "reason": "Rectangle flow arithmetic mismatch"
+    },
+    {
+      "test": "understated_cap_rounding_error",
+      "rejected": true,
+      "reason": "Cap rounding error mismatch"
+    },
+    {
+      "test": "unsupported_exclusion_of_feasible_rectangle",
+      "rejected": true,
+      "reason": "Zero facet"
+    },
+    {
+      "test": "unresolved_point_mislabeled_as_completion",
+      "rejected": true,
+      "reason": "Unaccepted rectangle leaf"
+    },
+    {
+      "test": "understated_global_integer_bound",
+      "rejected": true,
+      "reason": "Rectangle assembly mismatch"
+    },
+    {
+      "test": "binary_missing_child",
+      "rejected": true,
+      "reason": "Missing/repeated binary node"
+    },
+    {
+      "test": "binary_active_frontier",
+      "rejected": true,
+      "reason": "Active binary nodes remain"
+    },
+    {
+      "test": "binary_unjustified_reflection_prefix",
+      "rejected": true,
+      "reason": "Unjustified binary symmetry prefix"
+    },
+    {
+      "test": "binary_wrong_persistent_sign",
+      "rejected": true,
+      "reason": "Unjustified persistent assignments"
+    },
+    {
+      "test": "binary_missing_persistent_assignment",
+      "rejected": true,
+      "reason": "Unjustified persistent assignments"
+    },
+    {
+      "test": "binary_understated_flow",
+      "rejected": true,
+      "reason": "Binary flow arithmetic mismatch"
+    },
+    {
+      "test": "omitted_tail_error",
+      "rejected": true,
+      "reason": "Tail error is insufficient"
+    },
+    {
+      "test": "omitted_interpolation_and_tail_error",
+      "rejected": true,
+      "reason": "Interpolation error is insufficient"
+    },
+    {
+      "test": "omitted_fixed_point_input_error",
+      "rejected": true,
+      "reason": "Fixed-point input error is insufficient"
+    },
+    {
+      "test": "wrong_frozen_source_hash",
+      "rejected": true,
+      "reason": "Analytic source linkage mismatch"
+    },
+    {
+      "test": "asymmetric_integer_graph",
+      "rejected": true,
+      "reason": "asymmetric graph"
+    },
+    {
+      "test": "integer_overflow_budget",
+      "rejected": true,
+      "reason": "graph integer overflow budget"
+    },
+    {
+      "test": "zero_scalar_coordinate",
+      "rejected": true,
+      "reason": "cap coordinate"
+    },
+    {
+      "test": "reversed_cap_interval",
+      "rejected": true,
+      "reason": "cap parameters"
+    },
+    {
+      "test": "actual_non_fibre_repair_1e_minus_12",
+      "rejected": true,
+      "reason": "Directed LDL rejects row0 M2 transverse3"
+    }
+  ]
+}

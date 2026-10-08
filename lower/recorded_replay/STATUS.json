@@ -1,0 +1,10 @@
+{
+  "status": "KG_1773_THEOREM_CERTIFIED",
+  "KG_theorem_accepted": true,
+  "all_35_universal_fibres_regenerated": true,
+  "all_non_fibre_arithmetic_regenerated": true,
+  "norm_bound": "999999998227/1773000000000",
+  "certified_KG_lower": "1773000000000/999999998227",
+  "matrix_PD_checks": 1820,
+  "negative_controls_rejected": 32
+}

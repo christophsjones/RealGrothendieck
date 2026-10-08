@@ -1,0 +1,1 @@
+{"status": "UNIVERSAL_FIBRE_REPLAY_PASSED", "row": 32, "method": "boxes", "statistics": {"rectangles": 33, "empty_rectangles": 0, "flow_rectangles": 16, "branch_rectangles": 1, "integer_flows": 19, "binary_nodes": 3, "binary_leaves": 2}, "seconds": 33.99180603027344}

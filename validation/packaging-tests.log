@@ -1,0 +1,12 @@
+test_all_70_corrupted_tail_weights (test_packaging.PackagingTests.test_all_70_corrupted_tail_weights) ... ok
+test_missing_source (test_packaging.PackagingTests.test_missing_source) ... ok
+test_optimized_python (test_packaging.PackagingTests.test_optimized_python) ... ok
+test_output_inside_inputs (test_packaging.PackagingTests.test_output_inside_inputs) ... ok
+test_relocated_data_only (test_packaging.PackagingTests.test_relocated_data_only) ... ok
+test_tampered_input (test_packaging.PackagingTests.test_tampered_input) ... ok
+test_unlisted_source (test_packaging.PackagingTests.test_unlisted_source) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 1.853s
+
+OK

@@ -1,0 +1,32 @@
+{
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "platform": "Linux-6.18.35-x86_64-with-glibc2.41",
+  "compiler": "g++ (Debian 14.2.0-19) 14.2.0",
+  "workers": 3,
+  "analytic_backend": "independent-mpfr-endpoint-0.3-fma",
+  "precision_bits": 384,
+  "integer_source_sha256": "fb535811251cca89ef5d45e3285195ea238f536d07f192cfbaf72e937c588e17",
+  "mpfr_source_sha256": {
+    "balls.hpp": "fa3916cbf8aecb0f9e2cb9fe8a647b998bffb724904ab95f916e6f480aaa6bf7",
+    "flint.pyx": "27540741ae6676d70e9f372f7544411d295d16e7ca76edbe8440c0b78beb46ea"
+  },
+  "python_packages": {
+    "numpy": "2.3.5",
+    "Cython": "3.2.4",
+    "setuptools": "82.0.1"
+  },
+  "MPFR_version": "4.2.2",
+  "GMP_version": "6.3.0",
+  "verifier_sources_sha256": {
+    "tools/analytic.py": "00306b38331e5f8de0fcda390b5503dc70e3765cd6e360820dfbf2739c969d46",
+    "tools/assemble_final.py": "48fe59c728d7c4a371c574b70c332068d6f6774e419b6371fbb7503482a7ed8f",
+    "tools/exact_graph.cpp": "fb535811251cca89ef5d45e3285195ea238f536d07f192cfbaf72e937c588e17",
+    "tools/frozen_row_limit.py": "c9ff703a35bd68bc6f1c081eacb3f9e2c356b9e5de857b896f32982e997ac63a",
+    "tools/graph.py": "78fabc7e8cb676a00dbac984b4cdf4197a3406186194fd1f147ac68925a78962",
+    "tools/replay.py": "ae6ede777825fd6448af35251c0e7a56d6ce9d99725ffa9be136344b45d1e7e0",
+    "tools/test_analytic.py": "41f17769892cb3b763edaea547bff00b3cd746f93b8e5bd35c982316eb227e48",
+    "tools/test_evidence.py": "02b2802b819630c7f9b1c3ce1ddd41974dc62d099898ff70845614a62f8c9471",
+    "tools/test_graph.py": "d9e4b87b3384b1a91e60bb401924cd736e0156a2af2b5e466f6283802f0f075c"
+  },
+  "driver_sha256": "e24901f7f0f1dff36c27644f4f14485be37a269256baa3fa7b497bd5009af34a"
+}

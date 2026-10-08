@@ -1,0 +1,57 @@
+{
+  "source_edition": "lower-bound-shorter-cert.zip",
+  "source_edition_sha256": "890c90348ae31c50873a92adab41737a1edcee54356166b8ffe1cae63cf67b70",
+  "nested_grothendieck_1777_zip_sha256": "4d27091157da2b2dc1d28ae54d12f010003d56e2079cd20ad6d9054f1fae5d82",
+  "nested_package_matches_existing_grothendieck_1777_zip": true,
+  "lower_certificate_sha256": "5dc5471e4a0c340bb972691226c1dd4748f4e8254307fbbd65b8a8ffc3f4a433",
+  "upper_certificate_sha256": "a8dd6494262499b82bcb3026263cb06c4fe6a6bb8b25c0be55845b162a325832",
+  "manuscript_file_reviewed": "main.tex",
+  "manuscript_sha256": "5b5748dd8e359052f5704cc78016296c42bffe806af7e7f6885d7066225521aa",
+  "preparation_date": "2026-10-06",
+  "changes": [
+    "Expose lower and upper package trees directly.",
+    "Adapt top-level data linkage and orchestration to read and copy those trees.",
+    "Run the newer exact lower tail test and the manuscript upper scalar check automatically.",
+    "Retain original numerical source and exact input bytes.",
+    "Refresh documentation; omit historical standalone manuscript copies."
+  ],
+  "upper_omitted_original_files": [
+    "manuscript.tex",
+    "manuscript.pdf"
+  ],
+  "lower_packaging_details": "lower/SOURCE.json",
+  "paper": "Primal/dual method for the Grothendieck constant",
+  "authors": [
+    "Steven Heilman",
+    "Chris Jones",
+    "Giulio Malavolta"
+  ],
+  "unchanged_upper_runtime_files": {
+    "requirements.txt": "184759f7f79f47e577723a333708a28d96cd9c50dcd1af80ac06eb45f4bee745",
+    "source/certification/certify_rare_additive_tails.py": "5eec1aaaf8814350728533ad438fbb62b5f7fea4053c21ed10da3c6db8ffcbb8",
+    "source/certification/certify_upper.py": "7099be98f6feaae4413018ab5691f7fc8312d570cfab51c61a893f50357ce6c8",
+    "source/certification/compose_head.py": "32a8411d7cdbd3cd41613c5dc2c77d90bfded74720c9131f1e1f51e110669df3",
+    "source/certification/degree681/certify_linear_tails.py": "be1dbad987ea17604f32b07cff4c2b154e5d016a2f076cbea76b946700abdc7a",
+    "source/certification/reproduce.py": "6cda595b657317ec4acdb1fc8335b59b395f0513f203b76ed3303d9bfd5f9dc3",
+    "source/certification/upper_head/arc/certify_complex_arc.py": "c27313c77967ab57721b1f0ab3bd858c73273903d75136ad674661f1b9aea1bc",
+    "source/certification/upper_head_681/certified_b_matrix.py": "ed41c2f51e485c8c2ff0dc01ee15d4d4a08ed17ab0356d14b2c67454d02c587a",
+    "source/certification/upper_head_681/contract_certified_head.py": "a8dccaba9e2afdf8f9ffbfc312eadd01660f14a664ab5d2bf7dfaafabe5533d1",
+    "source/certification/upper_head_681/full_head_plan.py": "da71f72c97d2dc24f4d4b2c5c0cde31b7c64fba1ada2059b4e43ca0f6ab60abc",
+    "source/certification/upper_head_681/verify_plane_budget.py": "9c270e48ab29cc77604464109b051692ea12746228db3533372e85e28cdca42b",
+    "source/certification/upper_tail/certify_factorized_energies.py": "bc7b9e4b8c5990ff9c3e95690ad6bdef5215dfe79a4491ff037d7de4a630aab3",
+    "source/certification/upper_tail/certify_heavy_tail_fine.py": "42332fbf9c7f76d72badf67f163ee7a3c2e97933e0ce217dae0f332d601d3310",
+    "source/certification/upper_tail/certify_quintic_continuation.py": "972a4966dd2cf5cf61ea6a84a59a4cca576ee43cbbb5da4ae49ea78426eed1e8",
+    "source/certification/weighted_staircase/certify_head.py": "f8d3f60111d62973a8a0eea15754a5d318810d1664665340c83b3b6f141c5232",
+    "source/certification/weighted_staircase/certify_nonadditive.py": "357c51b784a47e6754862e8b73fc625494b3c68cfde35e3f87402bae783a670d",
+    "source/certification/weighted_staircase/freeze_recipe.py": "a0505c9126b8f1a2a79fba8970347b1ddf33276ff51e28193a4e9f7b0bd3dd03",
+    "source/competitors/staircase_3_5.json": "2d9a68c3ea888090e3dd2633dd89d9559aa3849a3e4d2c488971f4934d319528",
+    "source/upper/refined_explicit_mixture.json": "e224ea8b723929b758cd0f5cee2c528f139028417091c30cb9fe9aab0563d19a",
+    "verify.py": "7ea8b4ae363accee23e40ffc0f15f318ed66a6f0c804321d98979826d3420a8e"
+  },
+  "source_edition_reports": "validation/source-edition/",
+  "top_level_exact_input_files_preserved": [
+    "data/lower_rows.json",
+    "data/upper_rounding.json",
+    "data/staircase.json"
+  ]
+}

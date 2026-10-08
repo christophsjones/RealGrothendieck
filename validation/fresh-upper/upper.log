@@ -1,0 +1,136 @@
+Fresh output: /private/tmp/kg-github-package-20261006/replay-upper/complete-wlzldtdg/upper_results/run-xjuzlz6x
+ALTERNATIVE_RECIPE_FROZEN 7e042c037c80f416e799f345badfaacaf496f04c6bf4748bfc7ae73ff06176fe
+Running 1/12: upper_head_681/certified_b_matrix.py
+Running 2/12: upper_head_681/contract_certified_head.py
+Running 3/12: upper_head_681/verify_plane_budget.py
+Running 4/12: weighted_staircase/certify_head.py
+Running 5/12: degree681/certify_linear_tails.py
+Running 6/12: weighted_staircase/certify_nonadditive.py
+Running 7/12: upper_tail/certify_quintic_continuation.py
+Running 8/12: upper_tail/certify_factorized_energies.py
+Running 9/12: upper_tail/certify_heavy_tail_fine.py
+Running 10/12: compose_head.py
+Running 11/12: certify_rare_additive_tails.py
+Running 12/12: certify_upper.py
+{
+  "status": "FRESH_FULL_UPPER_REGENERATION_ACCEPTED",
+  "degree": 681,
+  "seconds": 307.64674615859985,
+  "python": "/private/tmp/kg-github-package-20261006/venv/bin/python",
+  "python_flint_version": "0.9.0",
+  "stages": [
+    {
+      "stage": [
+        "upper_head_681/certified_b_matrix.py"
+      ],
+      "exit_code": 0,
+      "seconds": 9.187445402145386,
+      "log": "/private/tmp/kg-github-package-20261006/replay-upper/complete-wlzldtdg/upper_results/run-xjuzlz6x/work/certification/degree681/reproduction_logs/20261006T135409Z/01_certified_b_matrix.log"
+    },
+    {
+      "stage": [
+        "upper_head_681/contract_certified_head.py"
+      ],
+      "exit_code": 0,
+      "seconds": 247.43145298957825,
+      "log": "/private/tmp/kg-github-package-20261006/replay-upper/complete-wlzldtdg/upper_results/run-xjuzlz6x/work/certification/degree681/reproduction_logs/20261006T135409Z/02_contract_certified_head.log"
+    },
+    {
+      "stage": [
+        "upper_head_681/verify_plane_budget.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.18698406219482422,
+      "log": "/private/tmp/kg-github-package-20261006/replay-upper/complete-wlzldtdg/upper_results/run-xjuzlz6x/work/certification/degree681/reproduction_logs/20261006T135409Z/03_verify_plane_budget.log"
+    },
+    {
+      "stage": [
+        "weighted_staircase/certify_head.py",
+        "--degree",
+        "681",
+        "--prec",
+        "384"
+      ],
+      "exit_code": 0,
+      "seconds": 10.274157047271729,
+      "log": "/private/tmp/kg-github-package-20261006/replay-upper/complete-wlzldtdg/upper_results/run-xjuzlz6x/work/certification/degree681/reproduction_logs/20261006T135409Z/04_certify_head.log"
+    },
+    {
+      "stage": [
+        "degree681/certify_linear_tails.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.15504217147827148,
+      "log": "/private/tmp/kg-github-package-20261006/replay-upper/complete-wlzldtdg/upper_results/run-xjuzlz6x/work/certification/degree681/reproduction_logs/20261006T135409Z/05_certify_linear_tails.log"
+    },
+    {
+      "stage": [
+        "weighted_staircase/certify_nonadditive.py",
+        "--degree",
+        "681"
+      ],
+      "exit_code": 0,
+      "seconds": 0.19776105880737305,
+      "log": "/private/tmp/kg-github-package-20261006/replay-upper/complete-wlzldtdg/upper_results/run-xjuzlz6x/work/certification/degree681/reproduction_logs/20261006T135409Z/06_certify_nonadditive.log"
+    },
+    {
+      "stage": [
+        "upper_tail/certify_quintic_continuation.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.16651606559753418,
+      "log": "/private/tmp/kg-github-package-20261006/replay-upper/complete-wlzldtdg/upper_results/run-xjuzlz6x/work/certification/degree681/reproduction_logs/20261006T135409Z/07_certify_quintic_continuation.log"
+    },
+    {
+      "stage": [
+        "upper_tail/certify_factorized_energies.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.13074302673339844,
+      "log": "/private/tmp/kg-github-package-20261006/replay-upper/complete-wlzldtdg/upper_results/run-xjuzlz6x/work/certification/degree681/reproduction_logs/20261006T135409Z/08_certify_factorized_energies.log"
+    },
+    {
+      "stage": [
+        "upper_tail/certify_heavy_tail_fine.py"
+      ],
+      "exit_code": 0,
+      "seconds": 14.635066747665405,
+      "log": "/private/tmp/kg-github-package-20261006/replay-upper/complete-wlzldtdg/upper_results/run-xjuzlz6x/work/certification/degree681/reproduction_logs/20261006T135409Z/09_certify_heavy_tail_fine.log"
+    },
+    {
+      "stage": [
+        "compose_head.py",
+        "--degree",
+        "681"
+      ],
+      "exit_code": 0,
+      "seconds": 12.89222002029419,
+      "log": "/private/tmp/kg-github-package-20261006/replay-upper/complete-wlzldtdg/upper_results/run-xjuzlz6x/work/certification/degree681/reproduction_logs/20261006T135409Z/10_compose_head.log"
+    },
+    {
+      "stage": [
+        "certify_rare_additive_tails.py",
+        "--degree",
+        "681"
+      ],
+      "exit_code": 0,
+      "seconds": 12.237112998962402,
+      "log": "/private/tmp/kg-github-package-20261006/replay-upper/complete-wlzldtdg/upper_results/run-xjuzlz6x/work/certification/degree681/reproduction_logs/20261006T135409Z/11_certify_rare_additive_tails.log"
+    },
+    {
+      "stage": [
+        "certify_upper.py",
+        "--degree",
+        "681"
+      ],
+      "exit_code": 0,
+      "seconds": 0.14224624633789062,
+      "log": "/private/tmp/kg-github-package-20261006/replay-upper/complete-wlzldtdg/upper_results/run-xjuzlz6x/work/certification/degree681/reproduction_logs/20261006T135409Z/12_certify_upper.log"
+    }
+  ],
+  "lower_endpoint": "Not certified. This run covers only the upper endpoint."
+}
+FRESH_FULL_UPPER_REGENERATION_ACCEPTED=1
+FRESH_COMPLETE_UPPER_CERTIFICATE_VERIFIED=1
+CERTIFIED_KG_UPPER=1779893/1000000
+RESULT=/private/tmp/kg-github-package-20261006/replay-upper/complete-wlzldtdg/upper_results/run-xjuzlz6x/VERIFIED.json

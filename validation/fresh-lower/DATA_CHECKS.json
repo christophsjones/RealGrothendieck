@@ -1,0 +1,10 @@
+{
+  "lower_rows": 35,
+  "upper_components": 32,
+  "staircase_strips": 2048,
+  "exact_lower_endpoint": "1773000000000/999999998227",
+  "upper_comparison_margin": "561831528950464991/1000000000000000000",
+  "analytic_numerical_certificates_replayed": false,
+  "rotation_tail_checks": 70,
+  "rotation_tail_minimum_gap": "1011627087840387/500000000000000000000000"
+}
