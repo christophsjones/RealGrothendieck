@@ -87,18 +87,22 @@ def regenerate_definitions() -> dict[str, Any]:
         return load((ROOT/'upper'/path).read_bytes())
     mix = read_upper(MIX_PATH)
     stair_source = read_upper(STAIR_PATH)
+    weight_sum = sum(Q(str(item['weight'])) for item in mix['active'])
     components = []
     for i, item in enumerate(mix['active']):
         typ = {'linear':'hyperplane','weighted_3_5':'staircase'}.get(item['type'],item['type'])
-        row = {'index':i, 'type':typ, 'raw_weight':frac(item['weight'])}
+        row = {'index':i, 'type':typ, 'raw_weight':frac(item['weight']),
+               'weight':frac(Q(str(item['weight']))/weight_sum)}
         if typ != 'staircase':
             powers = item.get('powers',{'1':item.get('r1','0'),'3':item.get('r3','0')})
             row['raw_covariance'] = {str(d):frac(v) for d,v in powers.items() if Q(str(v))}
+            scale = max(Q(1), sum(abs(Q(v)) for v in row['raw_covariance'].values()))
+            row['covariance'] = {d:frac(Q(v)/scale) for d,v in row['raw_covariance'].items()}
         components.append(row)
     threshold = mix['threshold_definition']
     upper = {
         'degree':681,
-        'weight_sum':frac(sum(Q(x['raw_weight']) for x in components)),
+        'weight_sum':frac(weight_sum),  # Sum of the frozen raw weights.
         'threshold':dict(zip(map(str,threshold['r_normalized_probabilists_Hermite_degrees']),
                              vector(threshold['r_coefficients_exact_decimal']))),
         'components':components,
@@ -140,8 +144,11 @@ def check_definitions(definitions: dict[str, Any]) -> dict[str, Any]:
     require(len(components)==32, 'Expected 32 components')
     require(sum(Q(c['raw_weight']) for c in components)==Q(upper['weight_sum'])==
             Q(25000000000000000247431,25000000000000000000000), 'Weight sum mismatch')
+    require(sum(Q(c['weight']) for c in components)==1, 'Probability weights do not sum to one')
     for i,c in enumerate(components):
         require(c['index']==i and Q(c['raw_weight'])>0, 'Invalid component/weight')
+        require(Q(c['weight'])>0 and Q(c['weight'])==Q(c['raw_weight'])/Q(upper['weight_sum']),
+                'Probability weight differs from the certified normalization')
         if i==14:
             require(c['type']=='staircase', 'Wrong staircase index')
             continue
@@ -149,7 +156,10 @@ def check_definitions(definitions: dict[str, Any]) -> dict[str, Any]:
         poly={int(k):Q(v) for k,v in c['raw_covariance'].items()}
         require(all(k>0 and k%2 for k in poly), 'Covariance is not an odd polynomial')
         norm=sum(abs(v) for v in poly.values()); scale=max(Q(1),norm)
-        require(sum(abs(v/scale) for v in poly.values())<=1, 'Invalid covariance normalization')
+        covariance={int(k):Q(v) for k,v in c['covariance'].items()}
+        require(covariance=={k:v/scale for k,v in poly.items()},
+                'Covariance differs from the certified normalization')
+        require(sum(abs(v) for v in covariance.values())<=1, 'Invalid covariance normalization')
     stair=definitions['staircase.json']
     require(stair['denominator']==256 and Q(str(stair['end']))==8 and len(stair['rows'])==2048,
             'Invalid staircase strip cover')
